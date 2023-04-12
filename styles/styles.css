@@ -15,7 +15,7 @@ font-family: 'Montserrat', sans-serif; /* на странице во всём т
   height: 100vh; /*100% экрана по высоте */
 
   background-color: #556983; /* цвет окна */
-  background-image: url("img/header/laptop-for-coding-bg.jpg"); /* добавляет изображение на фон */
+  background-image: url("../img/header/laptop-for-coding-bg.jpg"); /* добавляет изображение на фон */
   background-size: cover; /* добавляет изображение на фон */
   background-position: center;
 }
