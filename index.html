@@ -7,6 +7,235 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Портфолио</title>
+  
+  <style> 
+  *{
+  box-sizing: border-box;
+}
+
+body{
+margin: 0 ;
+font-family: 'Montserrat', sans-serif; /* на странице во всём теге body будет использоваться шрифт Montserrat */
+}
+
+.container{
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.none{
+  display: none !important;
+}
+
+
+/* header start*/
+.header{
+  position: relative;
+  display: flex; /**/
+  flex-direction: column; /* выстраивание FLEX по колонне Y*/
+  justify-content: center; /* выравнивание по центру относительно оси Y*/
+  align-items: center; /* выравниваем текст по центру в блоке относительно оси X */
+
+  width: 100%; /* 100% ширины страницы */
+  height: 100vh; /*100% экрана по высоте */
+
+  background-color: #556983; /* цвет окна */
+  background-image: url("../img/header/laptop-for-coding-bg.jpg"); /* добавляет изображение на фон */
+  background-size: cover; /* добавляет изображение на фон */
+  background-position: center;
+}
+
+.header-title{
+  margin: 0 ;
+  margin-bottom: 25px;
+
+  font-weight: 700; /* жирность текста */
+  font-size: 56px; /* размер текста */
+  line-height: 1.3; /* высота строки */
+
+  text-align: center; /* выравнивание текста по центру */
+
+  color: white;
+}
+
+.header-subtitle{
+  margin: 0 ;
+ 
+  font-weight: 400; /* жирность текста */
+  font-size: 16px; /* размер текста */
+  line-height: 1.5; /* высота строки */
+
+  text-align: center; /* выравнивание текста по центру */
+  letter-spacing: 0.2em; /* межбуквенное расстояние */
+  text-transform: uppercase; /* отображение текста в верхнем регистре (всё) */
+
+  color: white;
+}
+
+.header-arrow{
+  position: absolute; 
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -10px);
+
+  width: 48px;
+  height: 48px;
+
+  /* background-color: blueviolet; */
+}
+
+/* header end*/
+
+/* portfolio start*/
+
+.portfolio{
+  padding-top: 80px;
+  padding-bottom: 115px;
+}
+
+.portfolio_header{
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.3;
+  text-align: center;
+  color: black;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.portfolio_card_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card{
+  margin-bottom: 30px;
+  padding: 20px;
+  max-width: 540px;
+  background-color: white;
+  box-shadow: 0px 18px 40px rgba(126, 155, 189, 0.35);
+}
+
+.card:last-child, .card:nth-last-child(2){
+margin-bottom: 0;
+}
+
+
+
+.card_img{
+  margin-bottom: 20px;
+}
+
+.card_title{
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+  color: black;
+}
+
+.card p{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  color: black;
+}
+
+/* portfolio end*/
+
+
+/* footer start*/
+
+.footer{
+background-color: #1e4776;
+padding-top: 45px;
+padding-bottom: 130px;
+}
+
+.footer_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer_col{
+  flex-grow: 1;
+  max-width: 350px;
+}
+
+.footer_copyright{
+  color:#7E9ec9;
+  line-height: 1.3;
+}
+
+.footer_copyright_name{
+font-size: 28px;
+margin-bottom: 15px;
+}
+
+.footer_copyright p{
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer_icons{
+  max-width: 350px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+
+.footer_icons_row{
+  display: flex;
+  align-items: center;
+}
+
+.footer_icons_row > * + *{    /* > * указывает к каким элементам применяется скласс по уровню вложенности > 1*/
+margin-left: 30px;
+}
+
+
+
+.footer_button{
+  display: inline-block;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 44px;
+
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #FFFFFF;
+
+}
+
+.footer_contacts p{
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #7E9EC9;
+}
+
+
+/* footer end*/
+
+
+
+  </style>
 </head>
 
     <div class="header ">
